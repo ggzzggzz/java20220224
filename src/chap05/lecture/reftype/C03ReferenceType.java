@@ -1,4 +1,4 @@
-package chap05.lecture;
+package chap05.lecture.reftype;
 
 public class C03ReferenceType {
 	public static void main(String[] args) {

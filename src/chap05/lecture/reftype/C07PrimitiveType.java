@@ -1,4 +1,4 @@
-package chap05.lecture;
+package chap05.lecture.reftype;
 
 public class C07PrimitiveType {
 	public static void main(String[] args) {
