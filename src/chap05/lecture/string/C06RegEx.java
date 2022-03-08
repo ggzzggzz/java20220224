@@ -4,7 +4,7 @@ public class C06RegEx {
 	// https://git.io/vx86V
 	
 	public static void main(String[] args) {
-		// regular expression'
+		// regular expression
 		// 정규식(정규표현식)
 		// 문자열의 패턴을 표현한 문자
 		
