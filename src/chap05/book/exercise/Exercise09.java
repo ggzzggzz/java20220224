@@ -19,14 +19,12 @@ public class Exercise09 {
 			
 			if(selectNo == 1) {
 				System.out.print("학생수> ");
-				selectNo = scanner.nextInt();
-				studentNum = selectNo;
-			} else if (selectNo == 2) {
+				studentNum = scanner.nextInt();
 				scores = new int[studentNum];
+			} else if (selectNo == 2) {
 				for(int i = 0; i < scores.length; i++) {
 					System.out.print("scores[" + i + "]: ");
-					selectNo = scanner.nextInt();
-					scores[i] = selectNo;
+					scores[i] = scanner.nextInt();
 				}
 			} else if(selectNo == 3) {
 				for(int i = 0; i < scores.length; i++) {
@@ -35,15 +33,14 @@ public class Exercise09 {
 			} else if(selectNo == 4) {
 				int max = 0;
 				int sum = 0;
-				int cnt;
 				double avg = 0.0;
-				for(cnt = 0; cnt < scores.length; cnt++) {
-					sum += scores[cnt];
-					if(max < scores[cnt]) {
-						max = scores[cnt];
+				for(int score : scores) {
+					sum += score;
+					if(max < score) {
+						max = score;
 					}
 				}
-				avg = (double)sum / cnt;
+				avg = (double)sum / scores.length;
 				System.out.println("최고 점수: " + max);
 				System.out.println("평균 점수: " + avg);
 			} else if(selectNo == 5){
