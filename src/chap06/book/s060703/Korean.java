@@ -1,4 +1,4 @@
-package chap06.book.s060702;
+package chap06.book.s060703;
 
 public class Korean {
 	// 필드
@@ -7,8 +7,8 @@ public class Korean {
 	String ssn;
 	
 	// 생성자
-	public Korean(String n, String s) {
-		name = n;
-		ssn = s;
+	public Korean(String name, String ssn) {
+		this.name = name;
+		this.ssn = ssn;
 	}
 }
