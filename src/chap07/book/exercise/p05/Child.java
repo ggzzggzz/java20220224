@@ -7,4 +7,12 @@ public class Child extends Parent {
 		super(name);
 		this.studentNo = studentNo;
 	}
+	
+	public String getName() {
+		return this.name;
+	}
+	
+	public int getStudentNo() {
+		return this.studentNo;
+	}
 }
