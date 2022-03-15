@@ -6,7 +6,7 @@ public class SubClass1 extends SuperClass1 {
 	// 문법 : @어노테이션명
 	
 	// @Override : 메소드 앞에 작성 가능함
-	//             컴파일러에게 이 메소드가 재정읟된 메소드인지 검증
+	//             컴파일러에게 이 메소드가 재정의된 메소드인지 검증
 	@Override
 	public void method1() {
 		// TODO Auto-generated method stub
