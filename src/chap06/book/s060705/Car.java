@@ -6,7 +6,7 @@ public class Car {
 	String color;
 	int maxSpeed;
 	
-	Car() {
+	public Car() {
 		
 	}
 	
