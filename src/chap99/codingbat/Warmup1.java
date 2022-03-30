@@ -1,6 +1,19 @@
 package chap99.codingbat;
 
 public class Warmup1 {
+	public int close10(int a, int b) {
+		int diffa = Math.abs(10 - a);
+		int diffb = Math.abs(10 - b);
+
+		if (diffa < diffb) {
+			return a;
+		} else if (diffa > diffb) {
+			return b;
+		} else {
+			return 0;
+		}
+	}
+
 	public String notString(String str) {
 
 		String front = "";

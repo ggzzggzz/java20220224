@@ -1,6 +1,19 @@
 package chap99.codingbat;
 
 public class Array2 {
+	public int bigDiff(int[] nums) {
+		int max = Integer.MIN_VALUE;
+		int min = Integer.MAX_VALUE;
+
+		for (int num : nums) {
+			max = Math.max(max, num);
+			min = Math.min(min, num);
+		}
+
+		return Math.abs(max - min);
+
+	}
+
 	public int[] shiftLeft(int[] nums) {
 		int[] result = new int[nums.length];
 
@@ -124,22 +137,6 @@ public class Array2 {
 		return sum / (nums.length - 2);
 	}
 
-	public int bigDiff(int[] nums) {
-		int max = nums[0];
-		int min = nums[0];
-
-		for (int i = 1; i < nums.length; i++) {
-			if (max < nums[i]) {
-				max = nums[i];
-			}
-
-			if (min > nums[i]) {
-				min = nums[i];
-			}
-		}
-
-		return max - min;
-	}
 
 	public int countEvens(int[] nums) {
 		int cnt = 0;
